@@ -19,7 +19,7 @@ function SearchTool() {
     e.preventDefault();
     if(!search) return;
     if(search.length < 3){
-      return toast.error('Tìm kiếm ít nhất 3 từ')
+      return toast.error('Tìm kiếm ít nhất ba từ')
     }
     const room = rooms.find((c) => c.fullName.toLowerCase().includes(search.toLowerCase()))
     if(room){
